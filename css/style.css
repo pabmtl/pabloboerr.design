@@ -110,7 +110,7 @@ a {
 
 .about-copy {
   width: 100%;
-  max-width: 420px;
+  max-width: 380px;
   color: #555;
   font-family: Inter, system-ui, sans-serif;
   font-size: 16px;
@@ -153,7 +153,7 @@ a {
   }
 
   .about-copy {
-    max-width: 420px;
+    max-width: 380px;
   }
 }
 
