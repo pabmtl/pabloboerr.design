@@ -67,14 +67,11 @@
     (function() {
       var contact = document.querySelector('.contact-link');
       if (contact) {
-        contact.addEventListener('click', function(e) {
-          e.preventDefault();
-          var to = [112,97,98,108,111,98,111,101,114,114,64,103,109,97,105,108,46,99,111,109]
-            .map(function(code) { return String.fromCharCode(code); })
-            .join('');
-          var subject = encodeURIComponent('hi there');
-          window.open('mailto:' + to + '?subject=' + subject, '_blank');
-        });
+        var to = [112,97,98,108,111,98,111,101,114,114,64,103,109,97,105,108,46,99,111,109]
+          .map(function(code) { return String.fromCharCode(code); })
+          .join('');
+        var subject = encodeURIComponent('hi there');
+        contact.href = 'mailto:' + to + '?subject=' + subject;
       }
     })();
   </script>
