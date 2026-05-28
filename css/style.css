@@ -12,7 +12,7 @@ body {
   padding: 8px;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   line-height: 1.5;
-  color: #0c1712;
+  color: #0C1712;
   background: #F6F4F1;
   background-clip: content-box;
 }
@@ -51,7 +51,7 @@ body {
 .nav a {
   font-size: 1rem;
   font-weight: 400;
-  color: #0c1712;
+  color: #0C1712;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -98,7 +98,7 @@ main {
 }
 
 .hello-title {
-  color: #0c1712;
+  color: #0C1712;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   font-size: 42px;
   font-style: normal;
@@ -109,7 +109,7 @@ main {
 }
 
 .hello-description {
-  color: #1A241F;
+  color: #1E2420;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -120,9 +120,9 @@ main {
 }
 
 .hello-description a {
-  color: #1A241F;
+  color: #1E2420;
   text-decoration: none;
-  border-bottom: 1px solid rgba(63, 107, 88, 0.35);
+  border-bottom: 1px solid rgba(30, 36, 32, 0.25);
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 
