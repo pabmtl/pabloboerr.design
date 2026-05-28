@@ -118,3 +118,15 @@ main {
   letter-spacing: -0.08px;
   margin: 0;
 }
+
+.hello-description a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.hello-description a:hover {
+  color: #3F6B58;
+}
