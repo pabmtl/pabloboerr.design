@@ -127,6 +127,15 @@ a {
   margin-bottom: 0;
 }
 
+.about-copy::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  margin-top: 30px;
+  background: #F03A14;
+}
+
 .text-link {
   color: inherit;
   text-decoration-line: underline;
