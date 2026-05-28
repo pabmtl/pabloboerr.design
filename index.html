@@ -6,28 +6,42 @@
   <title>Pablo Boerr – Senior Staff Product Designer at OpenAI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=responsive-page-frame">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=figma-one-pager">
 </head>
 <body>
-  <header class="site-header">
-    <a href="/" class="logo-mark" aria-label="Pablo Boerr home"></a>
-    <nav class="nav">
-      <a href="#" class="contact-link" aria-label="Contact by email">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="hello" class="hello">
-      <div class="hello-heading">
-        <h1 class="hello-name">Pablo J Boerr</h1>
-        <p class="hello-title">Product Designer</p>
+  <main class="page-shell" aria-label="Pablo Boerr portfolio homepage">
+    <header class="site-nav" aria-label="Primary">
+      <a href="/" class="brand-mark" aria-label="Pablo Boerr home"></a>
+      <div class="brand-links">
+        <a href="/" class="brand-name">PabloBoerr</a>
+        <span class="nav-muted" aria-disabled="true">Work</span>
       </div>
-      <p class="hello-description">
-        I design systems that make complex work feel simple. Currently, I’m a Senior Staff Product Designer at <a href="https://openai.com" target="_blank" rel="noopener noreferrer">OpenAI</a>, working across Codex, Sonata, agents, and AI product experiences. Previously, I spent six years at <a href="https://www.shopify.com" target="_blank" rel="noopener noreferrer">Shopify</a> shaping analytics platforms, data products, and query experiences used at scale.
-      </p>
+    </header>
+
+    <aside class="contact-panel" aria-label="Contact and elsewhere">
+      <section class="contact-group">
+        <h2>Get in touch</h2>
+        <a href="#" class="contact-link">Say hi</a>
+      </section>
+
+      <section class="contact-group elsewhere">
+        <h2>Elsewhere</h2>
+        <p>Linkedin</p>
+        <p>Instagram</p>
+        <p>AdpList</p>
+      </section>
+    </aside>
+
+    <section class="about-copy" aria-label="About Pablo Boerr">
+      <p>I design systems that make complex work feel simple. Currently, I’m a Senior Staff Product Designer at OpenAI, working across Codex, Sonata, agents, and AI product experiences. Previously, I spent six years at Shopify shaping analytics platforms, data products, mobile experiences, and query tools used at scale.</p>
+
+      <p>My work sits between AI, data, developer tools, and decision-making. Across those spaces, I focus on designing products that make powerful systems feel clear, useful, and trustworthy.</p>
+
+      <p>I care about designing products that respect complexity without passing that complexity on to people.</p>
     </section>
   </main>
+
   <script>
     (function() {
       var contact = document.querySelector('.contact-link');
