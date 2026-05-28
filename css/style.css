@@ -131,6 +131,22 @@ a {
   margin-bottom: 0;
 }
 
+.text-link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(85, 85, 85, 0.34);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.text-link:hover {
+  color: #0C1712;
+  text-decoration-color: #F03A14;
+}
+
 @media (max-width: 820px) {
   body {
     border-width: 5px;
