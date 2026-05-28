@@ -32,7 +32,7 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 8px;
-  background: #ED3F1C;
+  background: #2F4A3C;
   text-decoration: none;
   border-radius: 0;
   transition: border-radius 0.25s ease, opacity 0.2s ease;
@@ -57,7 +57,7 @@ body {
 }
 
 .nav a:hover {
-  color: #ED3F1C;
+  color: #2F4A3C;
 }
 
 /* Main */
@@ -88,7 +88,7 @@ main {
 }
 
 .hello-name {
-  color: #ED3F1C;
+  color: #2F4A3C;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
