@@ -127,16 +127,6 @@ a {
   margin-bottom: 0;
 }
 
-@media (min-width: 1440px) {
-  .page-shell {
-    grid-template-columns: minmax(260px, 24vw) minmax(230px, 19vw) minmax(360px, 410px);
-  }
-
-  .about-copy {
-    max-width: 410px;
-  }
-}
-
 @media (max-width: 820px) {
   body {
     border-width: 5px;
