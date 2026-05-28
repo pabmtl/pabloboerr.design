@@ -13,7 +13,6 @@
   <header class="site-header">
     <a href="/" class="logo-mark" aria-label="Pablo Boerr home"></a>
     <nav class="nav">
-      <a href="https://work.pabloboerr.design" class="work-link">Work</a>
       <a href="#" class="contact-link" aria-label="Contact by email">Contact</a>
     </nav>
   </header>
@@ -31,12 +30,6 @@
   </main>
   <script>
     (function() {
-      var workLink = document.querySelector('.work-link');
-      if (workLink) {
-        var host = window.location.hostname;
-        var isLocal = host === 'localhost' || host === '127.0.0.1' || host === '';
-        workLink.href = isLocal ? '/work/' : 'https://work.pabloboerr.design';
-      }
       var contact = document.querySelector('.contact-link');
       if (contact) {
         contact.addEventListener('click', function(e) {
