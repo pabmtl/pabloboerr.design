@@ -24,11 +24,11 @@ a {
 .page-shell {
   display: grid;
   grid-template-columns:
-    minmax(220px, 1fr)
-    minmax(220px, 1fr)
-    minmax(320px, 1fr)
-    minmax(72px, 0.32fr);
-  column-gap: clamp(28px, 2.1vw, 42px);
+    minmax(340px, 23.5vw)
+    minmax(320px, 22.5vw)
+    minmax(320px, 360px)
+    minmax(72px, 1fr);
+  column-gap: clamp(24px, 1.5vw, 32px);
   align-items: start;
   width: 100%;
   min-height: calc(100svh - 12px);
