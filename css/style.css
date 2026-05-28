@@ -120,13 +120,13 @@ main {
 }
 
 .hello-description a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: color 0.2s ease;
+  color: #1A241F;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(63, 107, 88, 0.35);
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .hello-description a:hover {
   color: #3F6B58;
+  border-bottom-color: #3F6B58;
 }
