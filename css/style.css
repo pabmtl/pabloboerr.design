@@ -12,7 +12,7 @@ body {
   padding: 8px;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   line-height: 1.5;
-  color: #000;
+  color: #0c1712;
   background: #F6F4F1;
   background-clip: content-box;
 }
@@ -32,7 +32,7 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 8px;
-  background: #2F4A3C;
+  background: #3F6B58;
   text-decoration: none;
   border-radius: 0;
   transition: border-radius 0.25s ease, opacity 0.2s ease;
@@ -51,13 +51,13 @@ body {
 .nav a {
   font-size: 1rem;
   font-weight: 400;
-  color: #000;
+  color: #0c1712;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .nav a:hover {
-  color: #2F4A3C;
+  color: #3F6B58;
 }
 
 /* Main */
@@ -88,7 +88,7 @@ main {
 }
 
 .hello-name {
-  color: #2F4A3C;
+  color: #3F6B58;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -98,7 +98,7 @@ main {
 }
 
 .hello-title {
-  color: #000;
+  color: #0c1712;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   font-size: 42px;
   font-style: normal;
