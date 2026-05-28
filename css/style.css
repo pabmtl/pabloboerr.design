@@ -33,7 +33,7 @@ a {
 
 .site-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 7px;
   min-width: 0;
 }
@@ -43,9 +43,9 @@ a {
   width: 10px;
   height: 10px;
   margin-left: -16px;
-  margin-top: 3px;
   flex: 0 0 auto;
   background: #F03A14;
+  border-radius: 50%;
 }
 
 .brand-links {
