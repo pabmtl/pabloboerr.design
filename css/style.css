@@ -2,52 +2,119 @@
   box-sizing: border-box;
 }
 
+html {
+  background: #fff;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  padding: 8px;
+  font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
   line-height: 1.5;
-  color: #1a1a1a;
+  color: #000;
+  background: #F6F4F1;
+  background-clip: content-box;
 }
 
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1.5rem 1px;
+  max-width: none;
+  margin: 0;
+}
+
+.logo-mark {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  background: #ED3F1C;
+  text-decoration: none;
+  border-radius: 0;
+  transition: border-radius 0.25s ease, opacity 0.2s ease;
+}
+
+.logo-mark:hover {
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ED3F1C;
+}
+
+/* Main */
 main {
-  max-width: 48rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 0 5.5rem 6rem;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.section {
-  padding: 3rem 0;
-  border-bottom: 1px solid #eee;
+@media (max-width: 768px) {
+  main {
+    padding: 0 2rem 4rem;
+  }
 }
 
-.section:last-of-type {
-  border-bottom: none;
+/* Hello */
+.hello {
+  max-width: 480px;
+  margin-left: 0;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
+.hello-heading {
+  margin-bottom: 1.5rem;
+}
+
+.hello-name {
+  color: #ED3F1C;
+  font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
   margin: 0 0 0.25rem;
 }
 
-.tagline {
-  color: #666;
+.hello-title {
+  color: #000;
+  font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.21px;
+  margin: 0 0 0.5rem;
+}
+
+.hello-description {
+  color: #555;
+  font-family: "Instrument Sans", "Instrument Sans Placeholder", Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.08px;
   margin: 0;
-}
-
-h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 0.75rem;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.cta:hover {
-  text-decoration: underline;
 }
