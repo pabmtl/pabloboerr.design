@@ -2,22 +2,13 @@
   box-sizing: border-box;
 }
 
-:root {
-  --background: #F6F4F1;
-  --text: #000;
-  --muted: #707070;
-  --soft: #A0A0A0;
-  --rule: rgba(0, 0, 0, 0.58);
-  --accent: #F03A14;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
   min-height: 100svh;
-  color: var(--text);
-  background: var(--background);
-  border: 5px solid #000;
+  color: #0C1712;
+  background: #F6F4F1;
+  border: 6px solid #000;
   font-family: "Instrument Sans", "Instrument Sans Placeholder", sans-serif;
 }
 
@@ -27,61 +18,70 @@ a {
 }
 
 .page-shell {
-  width: min(100%, 1440px);
-  min-height: calc(100svh - 10px);
-  margin: 0 auto;
-  padding: 40px clamp(54px, 8.3vw, 120px) 156px;
-}
-
-.top-accent {
-  width: 40px;
-  height: 1px;
-  margin-bottom: 12px;
-  background: var(--accent);
-}
-
-.top-grid {
   display: grid;
-  grid-template-columns: minmax(180px, 280px) minmax(180px, 1fr);
-  column-gap: clamp(72px, 13.5vw, 202px);
+  grid-template-columns:
+    minmax(340px, 23.5vw)
+    minmax(320px, 22.5vw)
+    minmax(320px, 360px)
+    minmax(72px, 1fr);
+  column-gap: clamp(24px, 1.5vw, 32px);
   align-items: start;
+  width: 100%;
+  min-height: calc(100svh - 12px);
+  padding: 32px clamp(28px, 2vw, 40px);
 }
 
 .site-nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.brand-mark {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: -16px;
+  flex: 0 0 auto;
+  background: #F03A14;
+  border-radius: 50%;
+}
+
+.brand-links {
+  display: flex;
   gap: 24px;
   min-width: 0;
   font-size: 15px;
-  font-weight: 500;
-  line-height: 1.1;
+  font-weight: 400;
+  line-height: 20px;
   letter-spacing: -0.15px;
   white-space: nowrap;
 }
 
 .brand-name {
-  color: var(--text);
+  color: #0C1712;
 }
 
 .nav-muted,
 .contact-group a,
 .contact-group p {
-  color: var(--soft);
+  color: #A0A0A0;
 }
 
 .contact-panel {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 30px;
   min-width: 0;
 }
 
 .contact-group h2 {
-  margin: 0 0 4px;
-  color: var(--text);
+  margin: 0 0 2px;
+  color: #0C1712;
   font-size: 15px;
-  font-weight: 500;
-  line-height: 1.1;
+  font-weight: 400;
+  line-height: 20px;
   letter-spacing: -0.15px;
 }
 
@@ -89,10 +89,10 @@ a {
 .contact-group p {
   display: block;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.14px;
+  line-height: 22px;
+  letter-spacing: -0.15px;
 }
 
 .contact-group a {
@@ -100,94 +100,46 @@ a {
 }
 
 .contact-group a:hover {
-  color: var(--accent);
+  color: #F03A14;
 }
 
-.hero {
-  width: min(100%, 920px);
-  margin-top: clamp(168px, 26vh, 280px);
-}
-
-.hero-rule {
-  width: min(310px, 42vw);
-  height: 2px;
-  margin-bottom: 70px;
-  background: var(--rule);
-}
-
-.hero h1 {
-  max-width: 920px;
-  margin: 0;
-  color: var(--text);
-  font-size: clamp(38px, 3.35vw, 48px);
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: -0.96px;
-}
-
-.about-section {
-  margin-top: 142px;
-}
-
-.section-rule {
-  width: 100%;
-  height: 1px;
-  margin-bottom: 92px;
-  background: var(--rule);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns:
-    minmax(120px, 160px)
-    minmax(120px, 160px)
-    minmax(320px, 580px);
-  column-gap: clamp(72px, 8vw, 146px);
-  align-items: start;
-}
-
-.about-grid h2,
-.status-block h3 {
-  margin: 0;
-  color: var(--text);
+.elsewhere p {
   font-size: 15px;
-  font-weight: 600;
-  line-height: 1.25;
   letter-spacing: -0.15px;
-}
-
-.status-block a {
-  display: block;
-  margin-top: 5px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.25;
-  letter-spacing: -0.2px;
 }
 
 .about-copy {
   width: 100%;
-  max-width: 580px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
+  max-width: 360px;
+  color: #555;
+  font-family: "Instrument Sans", "Instrument Sans Placeholder", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
   letter-spacing: -0.16px;
 }
 
 .about-copy p {
-  margin: 0 0 30px;
+  margin: 0 0 26px;
 }
 
 .about-copy p:last-child {
   margin-bottom: 0;
 }
 
+.about-copy::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  margin-top: 30px;
+  background: #F03A14;
+}
+
 .text-link {
   color: inherit;
   text-decoration-line: underline;
-  text-decoration-color: rgba(0, 0, 0, 0.22);
+  text-decoration-color: rgba(85, 85, 85, 0.34);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.16em;
   transition:
@@ -196,98 +148,37 @@ a {
 }
 
 .text-link:hover {
-  color: var(--text);
-  text-decoration-color: var(--accent);
+  color: #0C1712;
+  text-decoration-color: #F03A14;
 }
 
-@media (max-width: 980px) {
-  .page-shell {
-    padding: 32px 40px 104px;
+@media (max-width: 820px) {
+  body {
+    border-width: 5px;
   }
 
-  .top-grid,
-  .about-grid {
+  .page-shell {
     grid-template-columns: 1fr;
     row-gap: 40px;
+    min-height: calc(100svh - 10px);
+    padding: 26px 20px 44px;
+  }
+
+  .site-nav {
+    justify-content: space-between;
+  }
+
+  .brand-links {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .contact-panel {
     gap: 24px;
   }
 
-  .hero {
-    margin-top: 132px;
-  }
-
-  .hero h1 {
-    font-size: clamp(34px, 7vw, 46px);
-    line-height: 1.36;
-    letter-spacing: -0.72px;
-  }
-
-  .about-section {
-    margin-top: 112px;
-  }
-
-  .section-rule {
-    margin-bottom: 64px;
-  }
-
   .about-copy {
-    max-width: 620px;
-  }
-}
-
-@media (max-width: 560px) {
-  body {
-    border-width: 5px;
-  }
-
-  .page-shell {
-    min-height: calc(100svh - 10px);
-    padding: 24px 20px 72px;
-  }
-
-  .top-accent {
-    margin-bottom: 18px;
-  }
-
-  .site-nav {
-    justify-content: space-between;
-    gap: 18px;
-    width: 100%;
-  }
-
-  .hero {
-    margin-top: 104px;
-  }
-
-  .hero-rule {
-    width: 160px;
-    margin-bottom: 46px;
-  }
-
-  .hero h1 {
-    font-size: 29px;
-    line-height: 1.34;
-    letter-spacing: -0.58px;
-  }
-
-  .about-section {
-    margin-top: 88px;
-  }
-
-  .section-rule {
-    margin-bottom: 48px;
-  }
-
-  .about-grid {
-    row-gap: 28px;
-  }
-
-  .about-copy {
-    font-size: 15px;
-    line-height: 26px;
+    max-width: 380px;
   }
 }
 
